@@ -26,7 +26,7 @@
                 <a href="">Conteudos</a>
                 <a href="./Telas/Login.html">Login</a>
                 <span class="EspacadosSpan"></span>
-                <button id="BtnCadastroHeader">Cadastro</button>
+                <button class="BtnHeader" id="BtnCadastroHeader">Cadastro</button>
             </span>
         </nav>
     </header>
@@ -102,5 +102,11 @@
         <p>powered by: Time 5</p>
         <p></p>
     </footer>
+    <script>
+        const BtnCadastroHeader = document.getElementById('BtnCadastroHeader');
+        BtnCadastroHeader.addEventListener('click', () => {
+            window.location.href = "./Telas/Cadastro.html";
+        })
+    </script>
 </body>
 </html>

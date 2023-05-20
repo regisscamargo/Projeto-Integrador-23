@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../Styles/Defaut.css">
     <link rel="stylesheet" href="../Styles/logincadastro.css">
     
-    <title>SEI - Login</title>
+    <title>SEI - Cadastro</title>
 </head>
 <body>
 
@@ -26,14 +26,17 @@
                 <a href="">Conteudos</a>
                 <a href="./Login.html">Login</a>
                 <span class="EspacadosSpan"></span>
-                <button class="BtnHeader" id="BtnCadastroHeader">Cadastro</button>
+                <button class="BtnHeader" id="BtnLoginHeader">Login</button>
             </span>
         </nav>
     </header>
     
     <div class="DivForm">
         <div>
-            <label for="NomeLogin">login <br>
+            <label for="NomeLogin">E-mail <br>
+                <input class="InputLoginTxt" type="text" name="NomeLogin" id="" placeholder="Exemplo@Exemplo.com">
+            </label>
+            <label for="NomeLogin">Nome <br>
                 <input class="InputLoginTxt" type="text" name="NomeLogin" id="" placeholder="Nome">
             </label>
             <label for="SenhaLogin"> senha <br>
@@ -61,7 +64,6 @@
         <p></p>
     </footer>
     <script>
-
         const SeePassword = document.getElementById('SeePassword');
         SeePassword.addEventListener('click', () => {
             let Pass = document.getElementById('PasswordInput');
@@ -72,9 +74,9 @@
             }
         })
         
-        const BtnCadastroHeader = document.getElementById('BtnCadastroHeader');
-        BtnCadastroHeader.addEventListener('click', () => {
-            window.location.href = "./Cadastro.html";
+        const BtnLoginHeader = document.getElementById('BtnLoginHeader');
+        BtnLoginHeader.addEventListener('click', () => {
+            window.location.href = "./Login.html";
         })
     </script>
 </body>
