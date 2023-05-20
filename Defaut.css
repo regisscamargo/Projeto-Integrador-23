@@ -1,0 +1,24 @@
+* {
+    --Azul-Claro: #0075FF;
+    --Azul-Escuro: #013674;
+    --Azul-Light: #0057BC;
+    --Azul-Mid: #004AA2;
+    --Azul-Dark: #013674;
+    --Branco: #dcdcff;
+    --Preto: #000019;
+    --Rosa-Console: #FF00D6;
+    --Color-Print: #00FFD1;
+}
+body {
+    font-family: 'Montserrat';
+    background-color: var(--Azul-Claro);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0;
+}
+button {
+    border: none;
+    cursor: pointer;
+}
