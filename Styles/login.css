@@ -1,0 +1,82 @@
+body {
+    height: 100vh;
+    justify-content: space-between;
+}
+.DivLogin {
+    display: flex;
+    flex-direction: row;
+    padding: 0 5vw;
+}
+.DivLogin div label {
+    color: var(--Branco);
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+.InputLoginTxt {
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    padding-left: 20px;
+    background-color: var(--Azul-Mid);
+    color: var(--Branco);
+    margin-top: 10px;
+}
+.InputLoginTxt::placeholder {
+    color: var(--Branco);
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+.DivLogin > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+.DivLogin > div:nth-child(2) > img {
+    width: 450px;
+    height: 450px;
+}
+#BtnGoogle {
+    display: flex;
+    width: 200px;
+    align-items: center;
+}
+#BtnGoogle:hover {
+    cursor: pointer;
+}
+#BtnGoogle img {
+    z-index: 1;
+}
+#BtnGoogle span {
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: white;
+    width: 150px;
+    height: 30px;
+    z-index: 0;
+    right: 15px;
+    color: var(--Azul-Mid);
+    font-weight: bold;
+}
+#BtnEntrar {
+    background-color: var(--Azul-Mid);
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    color: var(--Branco);
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 15px;
+    transition: transform .2s;
+}
+#BtnEntrar:hover {    
+background-color: var(--Branco);
+color: var(--Azul-Claro);
+transform: scale(1.1);
+}

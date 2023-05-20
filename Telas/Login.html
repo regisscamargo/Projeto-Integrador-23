@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> <!-- Font Monserrat-->
+    
+    <link rel="stylesheet" href="../Styles/Defaut.css">
+    <link rel="stylesheet" href="../Styles/login.css">
+    
+    <title>SEI - Login</title>
+</head>
+<body>
+
+    <!-- Menu Superior -->
+    <header>
+        <nav>
+            <span>
+                <img src="../Assets/Logo.png" alt="">
+                <img src="../Assets/LogoNome.png" alt="">
+            </span>
+            <span>
+                <a href="#About">Home</a>
+                <a href="">Conteudos</a>
+                <a href="./Telas/Login.html">Login</a>
+                <span class="EspacadosSpan"></span>
+                <button id="BtnCadastroHeader">Cadastro</button>
+            </span>
+        </nav>
+    </header>
+    
+    <div class="DivLogin">
+        <div>
+            <label for="NomeLogin">login <br>
+                <input class="InputLoginTxt" type="text" name="NomeLogin" id="" placeholder="Nome">
+            </label>
+            <label for="SenhaLogin"> senha <br>
+                <input class="InputLoginTxt" type="password" name="SenhaLogin" id="PasswordInput" placeholder="..........">
+            </label>
+            <label>
+                <input type="checkbox" name="" id="SeePassword">
+                Mostrar a senha
+            </label>
+            <span id="BtnGoogle">
+                <img src="../Assets/google.png" style="height: 50px;" alt="">
+                <span>Conectar</span>
+            </span>
+            <button id="BtnEntrar">Entrar</button>
+        </div>
+        <div>
+            <img src="../Assets/Authentication.png" alt="">
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <span>
+            <img src="../Assets/Logo.png" alt="">
+            <img src="../Assets/LogoNome.png" alt="">
+        </span>
+        <p>powered by: Time 5</p>
+        <p></p>
+    </footer>
+    <script>
+        const SeePassword = document.getElementById('SeePassword');
+        SeePassword.addEventListener('click', () => {
+            let Pass = document.getElementById('PasswordInput');
+            if (Pass.getAttribute('type') == "password") {
+                Pass.setAttribute('type', 'text')
+            } else {
+                Pass.setAttribute('type', 'password')
+            }
+        })
+    </script>
+</body>
+</html>

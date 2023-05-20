@@ -1,48 +1,4 @@
-header nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 5vw;
-}
-header nav span img {
-    width: 75px;
-}
-header nav span:nth-child(2) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color: var(--Branco);
-    width: 60%;
-}
-a {
-    color: var(--Branco);
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    font-size: 18px;
-}
-.EspacadosSpan {
-    height: 20px;
-    width: 3px;
-    background-color: var(--Branco);
-}
-#BtnCadastroHeader {
-    background-color: var(--Azul-Claro);
-    border: 2px solid var(--Branco);
-    color: var(--Branco);
-    border-radius: 20px;
-    height: 30px;
-    width: 100px;
-    transition: transform .2s;
-}
-#BtnCadastroHeader:hover {    
-    background-color: var(--Branco);
-    color: var(--Azul-Claro);
-    transform: scale(1.1);
-}
+
 #About {
     background: linear-gradient(0deg, var(--Azul-Escuro),var(--Azul-Claro));
     display: flex;
@@ -84,6 +40,7 @@ a {
 }
 .DivInterativa h2 {
     color: var(--Branco);
+    text-align: center;
 }
 .JavaScriptFrameworks {
     width: 500px;
@@ -128,6 +85,7 @@ a {
 }
 .DivInterativa02 h2 {
     align-self: flex-start;
+    text-align: center;
 }
 .DivDialogo {
     display: flex;
@@ -189,21 +147,4 @@ a {
 }
 .DivIngresse button:active {
     box-shadow: none
-}
-footer {
-    display: flex;
-    background-image: url(Assets/FooterOndas.png);
-    height: 250px;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-footer span img {
-    width: 75px;
-}
-footer p {
-    font-weight: bold;
-    color: var(--Branco);
-    height: 35px;
-    width: 200px;
 }
