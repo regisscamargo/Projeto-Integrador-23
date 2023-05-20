@@ -35,7 +35,6 @@ body {
     align-items: center;
     justify-content: space-evenly;
     width: 50%;
-    height: 120%;
 }
 .DivForm > div:nth-child(2) > img {
     width: 450px;

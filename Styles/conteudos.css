@@ -1,0 +1,81 @@
+.MenuConteudos {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.MenuConteudos button {
+    background-color: transparent;
+    height: 50px;
+    width: 200px;
+    border: 1px solid var(--Branco);
+    border-radius: 25px;
+    color: var(--Branco);
+    font-weight: bold;
+    font-size: 20px;
+}
+.MenuConteudos span {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid var(--Branco);
+    border-radius: 10px;
+    align-items: center;
+    height: 50px;
+    width: 250px;
+}
+.MenuConteudos span input {
+    background-color: transparent;
+    width: 220px;
+    height: 48px;
+    color: var(--Branco);
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 5px;
+}
+.MenuConteudos span input::placeholder {
+    color: var(--Branco);
+    font-weight: bold;
+    font-size: 20px;
+}
+.DivDivisora {
+    background-color: var(--Branco);
+    height: 10px;
+    width: 90%;
+    align-self: center;
+    margin-top: 20px;
+    border-radius: 2px;
+}
+.DivConteudos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.DivBoxConteudo {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--Azul-Dark);
+    border-radius: 15px;
+    margin: 3% 1%;
+    padding: 25px;
+    width: 35%;
+    align-items: center;
+    justify-content: space-around;
+}
+.DivBoxConteudo:hover {
+    cursor: pointer;
+}
+.SpanDivisor {
+    background-color: var(--Branco);
+    width: 5px;
+    height: 150px;
+}
+.DivBoxConteudo h2 {
+    color: var(--Branco);
+    font-weight: bold;
+    font-size: 50px;
+}
+.DivBoxConteudo img {
+    height: 200px;
+}
