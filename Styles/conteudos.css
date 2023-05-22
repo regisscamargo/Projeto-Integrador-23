@@ -5,13 +5,28 @@
     align-items: center;
     justify-content: space-evenly;
 }
-.MenuConteudos button {
+.BtnDropdown {
     background-color: transparent;
     height: 50px;
     width: 200px;
     border: 1px solid var(--Branco);
     border-radius: 25px;
     color: var(--Branco);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.MenuConteudos button:hover {
+    background-color: var(--Branco);
+    color: var(--Azul-Escuro);
+}
+
+.ActiveBtn {
+    background-color: var(--Branco);
+    color: var(--Azul-Escuro);
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
     font-weight: bold;
     font-size: 20px;
 }
@@ -78,4 +93,24 @@
 }
 .DivBoxConteudo img {
     height: 200px;
+}
+
+/* Floats Menus*/
+.MenuDropdownContent {
+    display: none;
+}
+.MenuDropdownContentShow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+    position: absolute;
+    z-index: 1;
+    background-color: var(--Azul-Mid);
+    border: 1px solid var(--Azul-Claro);
+    box-shadow: -4px 4px 5px var(--Azul-Dark);
+    border-radius: 15px;
+    margin-top: 5px;
+    width: 200px;
+    height: 150px;
 }

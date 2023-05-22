@@ -90,7 +90,7 @@
     <!-- Ingresse -->
     <div class="DivIngresse">
         <h2>Diversos outros conteúdos sobre tecnologia</h2>
-        <button>Ingressar</button>
+        <button id="BtnIngressar">Ingressar</button>
     </div>
 
     <!--Footer-->
@@ -99,13 +99,17 @@
             <img src="Assets/Logo.png" alt="">
             <img src="./Assets/LogoNome.png" alt="">
         </span>
-        <p>powered by: Time 5</p>
+        <p>Powered by: Time 5</p>
         <p></p>
     </footer>
     <script>
         const BtnCadastroHeader = document.getElementById('BtnCadastroHeader');
         BtnCadastroHeader.addEventListener('click', () => {
             window.location.href = "./Telas/Cadastro.html";
+        })
+        const BtnIngressar = document.getElementById('BtnIngressar');
+        BtnIngressar.addEventListener('click', () => {
+            window.location.href = "./Telas/Login.html";
         })
     </script>
 </body>
