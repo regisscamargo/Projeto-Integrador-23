@@ -38,10 +38,10 @@
                 <i class="DownSimbol">▼</i>
             </button>
             <div id="MenuDropdownContent01" class="MenuDropdownContent">
-                <a href="">Opção 01</a>
-                <a href="">Opção 02</a>
-                <a href="">Opção 03</a>
-                <a href="">Opção 04</a>
+                <span class="ItenMenu" id="ItenMenu01">Básico</span>
+                <span class="ItenMenu" id="ItenMenu02">Flask</span>
+                <span class="ItenMenu" id="ItenMenu03">Django</span>
+                <span class="ItenMenu" id="ItenMenu04">Data Science</span>
             </div>
         </div>
         <div class="MenuDropdown">
@@ -49,10 +49,10 @@
                 <i class="DownSimbol">▼</i>
             </button>
             <div id="MenuDropdownContent02" class="MenuDropdownContent">
-                <a href="">Opção 01</a>
-                <a href="">Opção 02</a>
-                <a href="">Opção 03</a>
-                <a href="">Opção 04</a>
+                <span class="ItenMenu">Básico</span>
+                <span class="ItenMenu">Opção 02</span>
+                <span class="ItenMenu">Opção 03</span>
+                <span class="ItenMenu">Opção 04</span>
             </div>
         </div>
         <div class="MenuDropdown">
@@ -60,10 +60,10 @@
                 <i class="DownSimbol">▼</i>
             </button>
             <div id="MenuDropdownContent03" class="MenuDropdownContent">
-                <a href="">Opção 01</a>
-                <a href="">Opção 02</a>
-                <a href="">Opção 03</a>
-                <a href="">Opção 04</a>
+                <span class="ItenMenu">Básico</span>
+                <span class="ItenMenu">Opção 02</span>
+                <span class="ItenMenu">Opção 03</span>
+                <span class="ItenMenu">Opção 04</span>
             </div>
         </div>
         <div class="MenuDropdown">
@@ -71,13 +71,13 @@
                 <i class="DownSimbol">▼</i>
             </button>
             <div id="MenuDropdownContent04" class="MenuDropdownContent">
-                <a href="">Opção 01</a>
-                <a href="">Opção 02</a>
-                <a href="">Opção 03</a>
-                <a href="">Opção 04</a>
+                <span class="ItenMenu">Básico</span>
+                <span class="ItenMenu">Opção 02</span>
+                <span class="ItenMenu">Opção 03</span>
+                <span class="ItenMenu">Opção 04</span>
             </div>
         </div>
-        <span>
+        <span class="SpanPesquisar">
             <input type="text" name="" id="" placeholder="Pesquisar">
             <img src="../Assets/lupa.png" style="height: 20px;" alt="">
         </span>
@@ -117,6 +117,11 @@
     </footer>
 
     <script>
+        
+        const ItenMenu01 = document.getElementById('ItenMenu01');
+        ItenMenu01.addEventListener('click', () => {            
+            window.location.href = "./ConteudoTeste.html";
+        })
         const BtnDropdown01 = document.getElementById('BtnDropdown01');
         BtnDropdown01.addEventListener('click', () => {
             let MenuDropdownContent01 = document.getElementById('MenuDropdownContent01');

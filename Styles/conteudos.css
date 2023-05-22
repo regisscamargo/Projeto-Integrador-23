@@ -30,7 +30,7 @@
     font-weight: bold;
     font-size: 20px;
 }
-.MenuConteudos span {
+.SpanPesquisar {
     display: flex;
     flex-direction: row;
     border: 1px solid var(--Branco);
@@ -39,7 +39,7 @@
     height: 50px;
     width: 250px;
 }
-.MenuConteudos span input {
+.SpanPesquisar input {
     background-color: transparent;
     width: 220px;
     height: 48px;
@@ -48,7 +48,7 @@
     font-size: 20px;
     padding-left: 5px;
 }
-.MenuConteudos span input::placeholder {
+.SpanPesquisar input::placeholder {
     color: var(--Branco);
     font-weight: bold;
     font-size: 20px;
@@ -113,4 +113,19 @@
     margin-top: 5px;
     width: 200px;
     height: 150px;
+}
+
+.ItenMenu {
+    display: flex;
+    width: 100%;
+    height: 25%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: var(--Branco);
+    font-weight: bold;
+}
+.ItenMenu:hover {
+    background-color: var(--Rosa-Console);
+    cursor: pointer;
 }
