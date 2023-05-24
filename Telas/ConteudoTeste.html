@@ -87,27 +87,7 @@
     <div class="DivDivisora"></div>
 
     <!--Conteudos-->
-    <div class="DivConteudos">
-        <div class="DivBoxConteudo">
-            <h2>Python</h2>
-            <span class="SpanDivisor"></span>
-            <img src="../Assets/Python.png" alt="">
-        </div>
-        <div class="DivBoxConteudo">            
-            <h2>Csharp</h2>
-            <span class="SpanDivisor"></span>
-            <img src="../Assets/CSharp.png" alt="">
-        </div>
-        <div class="DivBoxConteudo">
-            <h2>JavaScript</h2>
-            <span class="SpanDivisor"></span>
-            <img src="../Assets/javascript.png" alt="">
-        </div>
-        <div class="DivBoxConteudo">
-            <h2>Banco DB</h2>
-            <span class="SpanDivisor"></span>
-            <img src="../Assets/BancoDB.png" alt="">
-        </div>
+    <div class="DivConteudos" id="IDReact">
     </div>
     <!--Footer-->
     <footer>
@@ -115,7 +95,11 @@
         <p>Powered by: Time 5</p>
         <p></p>
     </footer>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 
+    <script type="text/jsx" src="../ReactComponents/HelloWord.jsx"></script>
     <script>
         const BtnDropdown01 = document.getElementById('BtnDropdown01');
         BtnDropdown01.addEventListener('click', () => {
