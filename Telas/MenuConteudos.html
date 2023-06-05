@@ -23,7 +23,7 @@
             </span>
             <span>
                 <a href="../Index.html">Home</a>
-                <a href="./Conteudos.html">Conteudos</a>
+                <a href="./MenuConteudos.html">Conteudos</a>
                 <a href="./Login.html">Login</a>
                 <span class="EspacadosSpan"></span>
                 <button class="BtnHeader" id="BtnCadastroHeader">Cadastro</button>
@@ -87,8 +87,8 @@
     <div class="DivDivisora"></div>
 
     <!--Conteudos-->
-    <div class="DivConteudos">
-        <div class="DivBoxConteudo">
+    <div class="DivConteudos" id="ConteudosPrincipais">
+        <div class="DivBoxConteudo" id="BtnPytho" onclick="OpenPython()">
             <h2>Python</h2>
             <span class="SpanDivisor"></span>
             <img src="../Assets/Python.png" alt="">
@@ -109,6 +109,42 @@
             <img src="../Assets/BancoDB.png" alt="">
         </div>
     </div>
+    
+    <div class="DivConteudos" id="ConteudoPython" ><h1>Python</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis eligendi voluptatum commodi, quidem reprehenderit nulla impedit et est! Voluptatem consectetur ipsa doloribus beatae voluptates nihil culpa corrupti! Expedita, ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus atque, voluptatibus earum nulla aperiam quos, fugiat sapiente nobis fugit tempore quae officiis assumenda maiores repudiandae eius unde culpa impedit totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde officia doloremque dolorem deserunt exercitationem blanditiis, quas commodi, obcaecati amet necessitatibus accusantium eligendi repudiandae voluptas repellat laborum dicta recusandae, nihil provident? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, vero ut voluptates, molestias magnam provident nam officiis cumque ea quisquam ex sunt sint aut facere nisi distinctio, quis quo perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vel repellendus quia vitae autem quibusdam, exercitationem nobis architecto magni quas, sit laboriosam. Sint est quaerat quod minima a veniam deserunt?</p>
+        
+        <h2>Estrutura</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis eligendi voluptatum commodi, quidem reprehenderit nulla impedit et est! Voluptatem consectetur ipsa doloribus beatae voluptates nihil culpa corrupti! Expedita, ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus atque, voluptatibus earum nulla aperiam quos, fugiat sapiente nobis fugit tempore quae officiis assumenda maiores repudiandae eius unde culpa impedit totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde officia doloremque dolorem deserunt exercitationem blanditiis, quas commodi, obcaecati amet necessitatibus accusantium eligendi repudiandae voluptas repellat laborum dicta recusandae, nihil provident? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, vero ut voluptates, molestias magnam provident nam officiis cumque ea quisquam ex sunt sint aut facere nisi distinctio, quis quo perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vel repellendus quia vitae autem quibusdam, exercitationem nobis architecto magni quas, sit laboriosam. Sint est quaerat quod minima a veniam deserunt?</p>
+    
+        <h2>Exemplo:</h2>
+        <!-- Area de interação com código -->
+        <div class="DivInterativa">
+            <div class="DivInterativa01">
+                <div class="CodePainel">
+                    <p><span class="SpanDef">def</span> Teste:</p>
+                    <p>a = 1</p>
+                    <p>b = 2</p>
+                    <p>c = 3</p>
+                    <p><span class="SpanIF">if</span> a <span class="SpanIF"> > </span> b :</p>
+                    <span class="SpanIndentada">
+                        <span class="SpanTab"> </span> <p><span class="SpanPrint">print(</span>f'O valor <span class="SpanIF">{</span>a<span class="SpanIF">}</span> é maior que o <span class="SpanIF">{</span>b<span class="SpanIF">}</span>'<span class="SpanPrint">)</span></p>                
+                    </span>
+                    
+                    <p><span class="SpanIF">else:</span></p>
+                    <span class="SpanIndentada">
+                        <span class="SpanTab"> </span> <p><span class="SpanPrint">print(</span>f'O valor <span class="SpanIF">{</span>b<span class="SpanIF">}</span> é maior que o <span class="SpanIF">{</span>a<span class="SpanIF">}</span>'<span class="SpanPrint">)</span></p>  
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        <h2>Vídeo Explicativo</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lPnZ7rcNbUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h2>Duvidas? </h2>
+        <h2>Envie sue comentario</h2>
+        <input type="text"> 
+    </div>
+
     <!--Footer-->
     <footer>
         <p></p>
@@ -116,18 +152,22 @@
         <p></p>
     </footer>
 
+    <script src="../Scripts/ScriptsConteudos.js"></script>
     <script>
-        
-        const ItenMenu01 = document.getElementById('ItenMenu01');
-        ItenMenu01.addEventListener('click', () => {            
-            window.location.href = "./ConteudoTeste.html";
-        })
         const BtnDropdown01 = document.getElementById('BtnDropdown01');
+        BtnDropdown01.addEventListener('click', () => {CtrlMenu(BtnDropdown01)})
+
+        const ItenMenu01 = document.getElementById('ItenMenu01');
+        ItenMenu01.addEventListener('click', () => {
+            OpenPython(BtnDropdown01)
+        })
+
+        /*const BtnDropdown01 = document.getElementById('BtnDropdown01');
         BtnDropdown01.addEventListener('click', () => {
             let MenuDropdownContent01 = document.getElementById('MenuDropdownContent01');
             BtnDropdown01.classList.toggle("ActiveBtn");
             MenuDropdownContent01.classList.toggle("MenuDropdownContentShow");
-        })
+        })*/
 
         const BtnDropdown02 = document.getElementById('BtnDropdown02');
         BtnDropdown02.addEventListener('click', () => {

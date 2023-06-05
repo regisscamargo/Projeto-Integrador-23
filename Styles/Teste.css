@@ -1,0 +1,29 @@
+/* Painel do Codigo*/
+.CodePainel {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--Preto);
+    color: var(--Branco);
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 25px;
+    z-index: 1;
+}
+.SpanDef {
+    color: chartreuse;
+}
+.SpanIF {
+    color: var(--Rosa-Console);
+}
+.SpanPrint {
+    color: var(--Color-Print);
+}
+.SpanIndentada {
+    display: flex;
+    align-items: center;
+}
+.SpanTab {
+    width: 25px;
+    height: 5px;
+}
+/* Painel do Codigo*/
