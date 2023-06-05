@@ -1,0 +1,150 @@
+
+#About {
+    background: linear-gradient(0deg, var(--Azul-Escuro),var(--Azul-Claro));
+    display: flex;
+    flex-direction: row;
+    padding: 50px 5vw;
+    justify-content: center;
+    align-items: center;
+}
+#About div {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+#About div h2 {    
+    color: var(--Branco);
+    margin: 0;
+}
+#About div p {
+    color: var(--Branco);
+    text-align: justify;
+    line-height: 35px;
+    font-size: 25px;
+    width: 100%;
+}
+#About img {
+    height: 400px;
+}
+.DivInterativa {
+    background-color: var(--Azul-Dark);
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vw;
+}
+.DivInterativa .DivInterativa01 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.DivInterativa h2 {
+    color: var(--Branco);
+    text-align: center;
+}
+.JavaScriptFrameworks {
+    width: 500px;
+    position: relative;
+    right: 113px;
+    z-index: 0;
+}
+/* Painel do Codigo*/
+.CodePainel {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--Preto);
+    color: var(--Branco);
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 25px;
+    z-index: 1;
+}
+.SpanDef {
+    color: chartreuse;
+}
+.SpanIF {
+    color: var(--Rosa-Console);
+}
+.SpanPrint {
+    color: var(--Color-Print);
+}
+.SpanIndentada {
+    display: flex;
+    align-items: center;
+}
+.SpanTab {
+    width: 25px;
+    height: 5px;
+}
+/* Painel do Codigo*/
+.DivInterativa02 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.DivInterativa02 h2 {
+    align-self: flex-start;
+    text-align: center;
+}
+.DivDialogo {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.SpanDialogo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.SpanAvatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.SpanAvatar span {
+    color: var(--Branco);
+}
+.SpanDialogo div {
+    background-color: var(--Azul-Claro);
+    color: var(--Branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 0 25px;
+    margin-left: 15px;
+}
+.Conversation {
+    height: 500px;
+}
+.DivIngresse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Azul-Claro);
+    height: 200px;
+}
+.DivIngresse h2 {
+    color: var(--Branco);
+}
+.DivIngresse button {
+    background-color: var(--Azul-Mid);
+    font-weight: bold;
+    color: var(--Branco);
+    height: 50px;
+    width: 250px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 2px var(--Azul-Dark);
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.DivIngresse button:active {
+    box-shadow: none
+}

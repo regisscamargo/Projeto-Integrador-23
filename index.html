@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> <!-- Font Monserrat-->
+    <meta name="shortcut icon" href="./Assets/Logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./Styles/Defaut.css">
+    <link rel="stylesheet" href="./Styles/Index.css">
+
+    <title>SEI - Sistema Educacional Interno</title>
+</head>
+<body>
+
+    <!-- Menu Superior -->
+    <header>
+        <nav>
+            <span>
+                <img src="Assets/Logo.png" alt="">
+                <img src="./Assets/LogoNome.png" alt="">
+            </span>
+            <span>
+                <a href="#About">Home</a>
+                <a href="./Telas/MenuConteudos.html">Conteudos</a>
+                <a href="./Telas/Login.html">Login</a>
+                <span class="EspacadosSpan"></span>
+                <button class="BtnHeader" id="BtnCadastroHeader">Cadastro</button>
+            </span>
+        </nav>
+    </header>
+
+    <!-- Texto de Apresentação -->
+    <section id="About">
+        <div>
+            <h2>Sistema Educacional Interno</h2>
+            <p>O projeto do site tem como objetivo aprimorar a interação entre os alunos e elevar o desempenho geral do curso de sistemas de informação na Uniplac. Com o propósito de promover dinamismo e interação, desenvolvemos o SEI - Sistema de Ensino Interno.</p>
+        </div>
+        <img src="./Assets/JovemEstudante.png" alt="">
+        </div>
+    </section>
+
+    <!-- Area de interação com código -->
+    <div class="DivInterativa">
+        <h2>Com sistema interativo para você praticar seus códigos</h2>
+        <div class="DivInterativa01">
+            <div class="CodePainel">
+                <p><span class="SpanDef">def</span> Teste:</p>
+                <p>a = 1</p>
+                <p>b = 2</p>
+                <p>c = 3</p>
+                <p><span class="SpanIF">if</span> a <span class="SpanIF"> > </span> b :</p>
+                <span class="SpanIndentada">
+                    <span class="SpanTab"> </span> <p><span class="SpanPrint">print(</span>f'O valor <span class="SpanIF">{</span>a<span class="SpanIF">}</span> é maior que o <span class="SpanIF">{</span>b<span class="SpanIF">}</span>'<span class="SpanPrint">)</span></p>                
+                </span>
+                
+                <p><span class="SpanIF">else:</span></p>
+                <span class="SpanIndentada">
+                    <span class="SpanTab"> </span> <p><span class="SpanPrint">print(</span>f'O valor <span class="SpanIF">{</span>b<span class="SpanIF">}</span> é maior que o <span class="SpanIF">{</span>a<span class="SpanIF">}</span>'<span class="SpanPrint">)</span></p>  
+                </span>
+                
+            </div>
+            <div>
+                <img src="./Assets/JavaScriptFrameworks.png" class="JavaScriptFrameworks" alt="">
+            </div>
+        </div>
+        <h2>Interações entre alunos</h2>
+        <div class="DivInterativa02">
+            <div class="DivDialogo">
+                <span class="SpanDialogo">
+                    <span class="SpanAvatar">
+                        <img src="./Assets/Utilizador.png" style="width: 50px;" alt="">
+                        <span>Ivan</span>
+                    </span>
+                    <div>meu c# ta dando erro, fica piscando</div>
+                </span>
+                <span class="SpanDialogo">
+                    <span class="SpanAvatar">
+                        <img src="./Assets/Utilizador.png" style="width: 50px;" alt="">
+                        <span>Lulu</span>
+                    </span>
+                    <div>da teus pulo!!!</div>
+                </span>
+            </div>
+            <img src="./Assets/Conversation.png" class="Conversation" alt="">
+        </div>
+    </div>
+
+    <!-- Ingresse -->
+    <div class="DivIngresse">
+        <h2>Diversos outros conteúdos sobre tecnologia</h2>
+        <button id="BtnIngressar">Ingressar</button>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <span>
+            <img src="Assets/Logo.png" alt="">
+            <img src="./Assets/LogoNome.png" alt="">
+        </span>
+        <p>Powered by: Time 5</p>
+        <p></p>
+    </footer>
+    <script>
+        const BtnCadastroHeader = document.getElementById('BtnCadastroHeader');
+        BtnCadastroHeader.addEventListener('click', () => {
+            window.location.href = "./Telas/Cadastro.html";
+        })
+        const BtnIngressar = document.getElementById('BtnIngressar');
+        BtnIngressar.addEventListener('click', () => {
+            window.location.href = "./Telas/Login.html";
+        })
+    </script>
+</body>
+</html>

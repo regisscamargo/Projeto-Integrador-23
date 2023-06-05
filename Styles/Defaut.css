@@ -1,0 +1,96 @@
+/*Aqui eu deixei basicamente o CSS que se repete */
+* {
+    --Azul-Claro: #0075FF;
+    --Azul-Escuro: #013674;
+    --Azul-Light: #0057BC;
+    --Azul-Mid: #004AA2;
+    --Azul-Dark: #013674;
+    --Branco: #dcdcff;
+    --Preto: #000019;
+    --Rosa-Console: #FF00D6;
+    --Color-Print: #00FFD1;
+    outline: none;
+}
+body {
+    font-family: 'Montserrat';
+    background-color: var(--Azul-Claro);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0;
+}
+button {
+    border: none;
+    cursor: pointer;
+}
+input {
+    border: none;
+}
+/* Header */
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5vw;
+}
+header nav span img {
+    width: 75px;
+}
+header nav span:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--Branco);
+    width: 60%;
+}
+a {
+    color: var(--Branco);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.EspacadosSpan {
+    height: 20px;
+    width: 3px;
+    background-color: var(--Branco);
+}
+.BtnHeader {
+    background-color: var(--Azul-Claro);
+    border: 2px solid var(--Branco);
+    color: var(--Branco);
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    transition: transform .2s;
+}
+.BtnHeader:hover {    
+    background-color: var(--Branco);
+    color: var(--Azul-Claro);
+    transform: scale(1.1);
+}
+/* Header */
+/* Footer */
+footer {
+    display: flex;
+    background-image: url(../Assets/FooterOndas.png);
+    background-repeat: round;
+    height: 250px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+footer span img {
+    width: 75px;
+}
+footer p {
+    font-weight: bold;
+    color: var(--Branco);
+    height: 35px;
+    width: 200px;
+}
+/* Footer */

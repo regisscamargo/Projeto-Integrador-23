@@ -1,0 +1,137 @@
+.MenuConteudos {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.BtnDropdown {
+    background-color: transparent;
+    height: 50px;
+    width: 200px;
+    border: 1px solid var(--Branco);
+    border-radius: 25px;
+    color: var(--Branco);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.MenuConteudos button:hover {
+    background-color: var(--Branco);
+    color: var(--Azul-Escuro);
+}
+
+.ActiveBtn {
+    background-color: var(--Branco);
+    color: var(--Azul-Escuro);
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.SpanPesquisar {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid var(--Branco);
+    border-radius: 10px;
+    align-items: center;
+    height: 50px;
+    width: 250px;
+}
+.SpanPesquisar input {
+    background-color: transparent;
+    width: 220px;
+    height: 48px;
+    color: var(--Branco);
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 5px;
+}
+.SpanPesquisar input::placeholder {
+    color: var(--Branco);
+    font-weight: bold;
+    font-size: 20px;
+}
+.DivDivisora {
+    background-color: var(--Branco);
+    height: 5px;
+    width: 90%;
+    align-self: center;
+    margin-top: 20px;
+    border-radius: 2px;
+}
+.DivConteudos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.DivBoxConteudo {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--Azul-Dark);
+    border-radius: 15px;
+    margin: 3% 1%;
+    padding: 25px;
+    width: 35%;
+    align-items: center;
+    justify-content: space-around;
+}
+.DivBoxConteudo:hover {
+    cursor: pointer;
+}
+.SpanDivisor {
+    background-color: var(--Branco);
+    width: 5px;
+    height: 150px;
+}
+.DivBoxConteudo h2 {
+    color: var(--Branco);
+    font-weight: bold;
+    font-size: 50px;
+}
+.DivBoxConteudo img {
+    height: 200px;
+}
+
+/* Floats Menus*/
+.MenuDropdownContent {
+    display: none;
+}
+.MenuDropdownContentShow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+    position: absolute;
+    z-index: 1;
+    background-color: var(--Azul-Mid);
+    border: 1px solid var(--Azul-Claro);
+    box-shadow: -4px 4px 5px var(--Azul-Dark);
+    border-radius: 15px;
+    margin-top: 5px;
+    width: 200px;
+    height: 150px;
+}
+
+.ItenMenu {
+    display: flex;
+    width: 100%;
+    height: 25%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: var(--Branco);
+    font-weight: bold;
+}
+.ItenMenu:hover {
+    background-color: var(--Rosa-Console);
+    cursor: pointer;
+}
+
+#ConteudoPython {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+}

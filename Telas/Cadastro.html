@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> <!-- Font Monserrat-->
+    
+    <link rel="stylesheet" href="../Styles/Defaut.css">
+    <link rel="stylesheet" href="../Styles/logincadastro.css">
+    
+    <title>SEI - Cadastro</title>
+</head>
+<body>
+
+    <!-- Menu Superior -->
+    <header>
+        <nav>
+            <span>
+                <img src="../Assets/Logo.png" alt="">
+                <img src="../Assets/LogoNome.png" alt="">
+            </span>
+            <span>
+                <a href="../Index.html">Home</a>
+                <a href="./MenuConteudos.html">Conteudos</a>
+                <a href="./Login.html">Login</a>
+                <span class="EspacadosSpan"></span>
+                <button class="BtnHeader" id="BtnLoginHeader">Login</button>
+            </span>
+        </nav>
+    </header>
+    
+    <div class="DivForm">
+        <div>
+            <label for="NomeLogin">E-mail <br>
+                <input class="InputLoginTxt" type="text" name="NomeLogin" id="" placeholder="Exemplo@Exemplo.com">
+            </label>
+            <label for="NomeLogin">Nome <br>
+                <input class="InputLoginTxt" type="text" name="NomeLogin" id="" placeholder="Nome">
+            </label>
+            <label for="SenhaLogin"> senha <br>
+                <input class="InputLoginTxt" type="password" name="SenhaLogin" id="PasswordInput" placeholder="..........">
+            </label>
+            <label>
+                <input type="checkbox" name="" id="SeePassword">
+                Mostrar a senha
+            </label>
+            <span id="BtnGoogle">
+                <img src="../Assets/google.png" style="height: 50px;" alt="">
+                <span>Conectar</span>
+            </span>
+            <button id="BtnEntrar">Entrar</button>
+        </div>
+        <div>
+            <img src="../Assets/Authentication.png" alt="">
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <p></p>
+        <p>Powered by: Time 5</p>
+        <p></p>
+    </footer>
+    <script>
+        const SeePassword = document.getElementById('SeePassword');
+        SeePassword.addEventListener('click', () => {
+            let Pass = document.getElementById('PasswordInput');
+            if (Pass.getAttribute('type') == "password") {
+                Pass.setAttribute('type', 'text')
+            } else {
+                Pass.setAttribute('type', 'password')
+            }
+        })
+        
+        const BtnLoginHeader = document.getElementById('BtnLoginHeader');
+        BtnLoginHeader.addEventListener('click', () => {
+            window.location.href = "./Login.html";
+        })
+    </script>
+</body>
+</html>
