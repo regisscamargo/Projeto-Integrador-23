@@ -144,6 +144,11 @@
 #ConteudoPython p{
     text-align: justify;
     width: 90%;
+    text-indent: 1.5em;
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 15px;
 }
 /**/
 
@@ -174,4 +179,12 @@
     position: relative;
     right: 113px;
     z-index: 0;
+}
+#ConteudoPython > textarea{
+    width: 850px;
+    height: 500px;
+    background: var(--Azul-Escuro);
+    color: var(--Branco);
+    border-radius: 15px;
+    padding: 5px 15px;
 }
